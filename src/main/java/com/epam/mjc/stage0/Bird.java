@@ -2,8 +2,8 @@ package com.epam.mjc.stage0;
 
 public class Bird extends Animal {
 
-    public Bird (String color, int numberOfPaws, boolean hasFur){
-        super ( color, numberOfPaws, hasFur);}
+    public Bird (){
+        super ("blue", 2, false);}
 
     public String getDescription(){
         String birdColor = getColor();
@@ -13,6 +13,8 @@ public class Bird extends Animal {
        if (birdNumberOfPaws>1){
           paw = " paws ";}
 
-        return "This animal is mostly " + birdColor + ". It has " +birdNumberOfPaws +  paw + "and no fur. Moreover, it has 2 wings and can fly.";
+        return "This animal is mostly " + birdColor + ". It has " + birdNumberOfPaws +  paw + "and " + hasFurPrint + "fur. Moreover, it has 2 wings and can fly.";
 
     }}
+
+
